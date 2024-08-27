@@ -1,0 +1,447 @@
+/* Estilo Geral */
+body {
+    background-color: #DDCC55; /* Cor de fundo */
+    color: #000000; /* Cor de texto */
+    font-size: 16px; /* Tamanho de fonte */
+    font-family: 'Stoke', 'Lucida Bright', 'Liberation', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do Header */
+header {
+    display: block;
+    margin-bottom: 1px;
+}
+
+.header-top {
+    float: right;
+    text-align: right;
+    line-height: 140%; /* Espaçamento entre as linhas */
+    font-size: 20px; /* Tamanho de fonte */
+    font-family: 'Karla', 'Verdana', 'Ubuntu', sans-serif;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.header-top a {
+    color: #222222;
+    text-decoration: none; /* Sem sublinhado */
+}
+
+.header-image {
+    text-align: left;
+    position: relative;
+    width: 80%; /* Largura do contêiner */
+    padding-top: 5px; /* Reduz o padding top */
+}
+
+.header-image::after {
+    content: "";
+    display: block;
+    width: 60%; /* Largura da linha sublinhada */
+    border-bottom: 3px solid #222222; /* Borda inferior sólida */
+    margin-top: 10px; /* Espaço entre o conteúdo e a linha sublinhada */
+    margin-left: 10px;
+    position: absolute; /* Posiciona a linha sublinhada de forma absoluta */
+    left: 0; /* Alinha a linha com o início do contêiner */
+}
+
+.header-image img {
+    margin-left: 10px;
+    width: 60%; /* Ajuste o valor conforme necessário */
+    height: 10%; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaço extra abaixo da imagem */
+}
+/* Estilo do Nav */
+nav {
+    display: block;
+    width: 20%;
+    float: left;
+    margin-top: 40px; /* Margem superior */
+    margin-left: 50px;
+}
+
+nav ul {
+    color: #000000; /* Cor do texto */
+    line-height: 230%; /* Espaçamento entre as linhas */
+    list-style-type: square; /* Marca de início de item como quadrado */
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul a {
+    color: #222222;
+    text-decoration: none; /* Sem sublinhado */
+    font-weight: bold;
+}
+
+nav ul a:visited {
+    color: #222222;
+}
+
+/* Estilo da Section */
+section {
+    display: block;
+    width: 70%;
+    float: right;
+    padding-top: 10px; /* Reduz o padding top */
+    text-align: center; /* Alinhamento de texto */
+    font-size: 16px; /* Tamanho do fonte */
+}
+
+section .logo {
+    text-align: right;
+    margin-top: 25px;
+    position: relative;
+    padding-top: 5px;
+}
+
+section .logo img {
+    width: 350px; /* Ajuste o valor conforme necessário */
+    height: 430px; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem, se necessário */
+}
+
+/* Estilo para <hr> substituída pela borda */
+hr {
+    border: 0;
+    border-top: 1px solid #222222;
+    margin: 20px 0;
+}
+
+/* Estilo para Apresentação */
+.apres {
+    text-align: center; /* Alinhamento de texto */
+    font-size: 40px; /* Tamanho da fonte */
+    font-weight: bolder; 
+}
+
+/* Estilo para Imagens */
+img {
+    max-width: 100%;
+}
+
+img.imgLogo {
+    border-bottom: 3px solid #222222; /* Borda inferior sólida */
+    margin-bottom: 6px;
+    padding-bottom: 15px; 
+
+}
+/* Estilo para o Modal */
+.modal-content {
+    background: #fff;
+    border: 3px solid #000;
+    width: 500px;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centraliza o modal */
+}
+
+.listaPlano {
+    width: 300px;
+    color: #202020;
+    background-color: #FFFFCC; /* Cor de fundo amarela */
+    font-size: 14px;
+    padding: 15px;
+    border: 3px solid #202020;
+    margin: 20px auto;
+    list-style-type: square;
+}
+
+.listaPlano h4 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #000000;
+    text-align: left;
+}
+
+.listaPlano ol {
+    color: #000000;
+    list-style-type: lower-alpha;
+    margin-left: 20px;
+}
+
+/* Estilo para os preços */
+.preco {
+    color: #CC0000; /* Vermelho para o preço */
+    font-weight: bold;
+}
+
+/* Estilo para os parênteses de texto */
+.preco::before {
+    content: "(";
+    color: #000000; /* Preto para o parêntese esquerdo */
+}
+
+.preco::after {
+    content: ")";
+    color: #000000; /* Preto para o parêntese direito */
+}
+
+h3 {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.destaque {
+    color: #CC0000; /* Vermelho para o texto */
+    font-weight: bold;
+}
+/* Estilo para o texto dentro dos parênteses */
+.destaque::before,
+.destaque::after {
+    color: #000000; /* Preto para os parênteses */
+}
+
+/* Estilo para os parênteses do valor mensal */
+.destaque::before {
+    content: "(";
+}
+
+.destaque::after {
+    content: ")";
+}
+
+/* Estilo para o valor da matrícula */
+.preco-valor {
+    color: #CC0000; /* Vermelho para o valor numérico */
+    font-weight: bold;
+}
+
+/* Estilo para o símbolo R$ */
+.preco-valor::before {
+    content: "R$ ";
+    color: #000000; /* Preto para o símbolo R$ */
+    font-weight: normal;
+}
+
+/* Estilo para a section que contém a tabela */
+.equipamentos-section {
+    width: 500px;
+    margin: 20px auto;
+    margin-right: 100px;
+    padding: 20px;
+    background-color: #DDCC55;
+
+} 
+/* Estilo para a tabela */
+.tabEquip {
+    border: 1px solid #000000;
+    border-collapse: separate;
+    width: 510px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background-color: #EBE198; /* Cor de fundo da tabela igual à cor de fundo da section */
+}
+
+/* Estilos para o título da tabela */
+.tabTitulo {
+    background-color: #402020;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Estilos para os subtítulos dos equipamentos */
+.tabSubTit {
+    background-color: #802020;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 5px 10px; /* Reduz o padding para ajustar o espaço */
+    margin: 0; /* Remove qualquer margem externa */
+    height: 40px; /* Ajusta a altura conforme necessário */
+    box-sizing: border-box; /* Inclui padding e borda na largura e altura total */
+    display: flex; /* Usa flexbox para melhor controle do layout */
+    align-items: center; /* Alinha o texto verticalmente ao centro */
+    justify-content: center; /* Opcional: Alinha o texto horizontalmente ao centro */
+}
+
+/* Estilos para as células de descrição */
+td.descricao {
+    background-color:  #EBE198;
+    font-size: 11px;
+    vertical-align: middle; /* Alinha verticalmente ao centro */
+    height: 40px; /* Ajusta a altura para corresponder à altura da imagem */
+    box-sizing: border-box; /* Inclui padding e borda na largura e altura total */
+    padding: 5px; /* Ajuste o padding conforme necessário */
+    line-height: 1.5; /* Ajuste o espaçamento entre linhas do texto */
+    display: flex; /* Usa flexbox para o layout interno */
+    align-items: center; /* Alinha o texto verticalmente ao centro */
+    width: auto; /* Ajuste a largura conforme necessário */
+    margin-top: 10px; /* Remove qualquer margem externa */
+}
+
+/* Estilos para a tabela */
+.tabEquip {
+    border: 3px solid #000000;
+    border-collapse: collapse; /* Remove o espaço entre as bordas */
+    width: auto; /* Ajusta a largura da tabela com base no conteúdo */
+    margin-bottom: 10px;
+    background-color: #EBE198; /* Cor de fundo da tabela */
+}
+
+/* Estilos para as células que contêm as imagens */
+.imgCel {
+    width: 100px; /* Ajuste a largura conforme necessário */
+    height: 100px; /* Ajuste a altura para corresponder à imagem */
+    text-align: center;
+    vertical-align: middle; /* Alinha verticalmente ao centro */
+}
+
+/* Estilos para as imagens dentro das células */
+.imgCel img {
+    width: 100%; /* Ajusta a largura da imagem para preencher a célula */
+    height: 100%; /* Ajusta a altura da imagem para preencher a célula */
+    object-fit: cover; /* Garante que a imagem se ajuste dentro do espaço sem distorcer */
+}
+
+
+/* Alinhamento das células de imagem à esquerda */
+.imgLeft {
+    float: left;
+}
+
+/* Alinhamento das células de imagem à direita */
+.imgRight {
+    float: right;
+}
+
+.styled-section {
+    width: 400px;
+    margin: 20px auto;
+    margin-right: 100px;
+    padding: 20px;
+    background-color: #EEEEBB;
+    border: 3px solid #202020;
+}
+
+h2 {
+    text-align: center;
+    color: #202020;
+}
+
+form {
+    text-align: left;
+    font-size: 12px;
+    color: #202020;
+}
+
+fieldset {
+    border: 2px solid #202020;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #202020;
+}
+
+.linhaNome, .linhaDados {
+    padding-top: 8px;
+}
+
+.linhaNome {
+    height: 30px;
+    width: 340px;
+}
+
+.linhaDados {
+    height: 130px;
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colEsqPes {
+    float: left;
+    width: 30px;
+    display: block;
+}
+
+#fsGenero {
+    width: 150px; /* Ajuste a largura conforme necessário */
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#fsGenero label {
+    display: block;
+    margin-bottom: 5px; /* Espaçamento entre os labels */
+}
+
+#fsGenero input[type="radio"] {
+    margin-right: 5px; /* Espaçamento entre o rádio e o texto */
+}
+
+#fsPessoal {
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inpNome {
+    width: 220px;
+}
+
+.inpTelef {
+    width: 90px;
+}
+
+.inpMat {
+    width: 70px;
+}
+
+.inpNCC {
+    width: 130px;
+}
+
+.numDD {
+    width: 35px;
+}
+
+.numQD {
+    width: 50px;
+}
+
+.inpVal {
+    width: 50px;
+}
+
+.colLabCrd {
+    width: 270px;
+    height: 30px;
+    float: left;
+    text-align: left;
+}
+
+.colValTot {
+    width: 220px;
+    float: left;
+    text-align: left;
+    display: block;
+}
+
+.entDireita {
+    float: right;
+    margin-right: 20px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 2px solid #202020;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.entDireita:hover {
+    background-color: #f0e68c;
+}
